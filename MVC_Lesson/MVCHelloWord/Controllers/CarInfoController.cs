@@ -6,24 +6,15 @@ using System.Web.Mvc;
 
 namespace MVCHelloWord.Controllers
 {
-    public class HomeController : Controller
+    public class CarInfoController : Controller
     {
+        // GET: CarInfo
         public ActionResult Index()
         {
             return View();
         }
-
-        public ActionResult About()
+        public ActionResult Cars()
         {
-            ViewBag.Message = "About my new About";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
             return View();
         }
     }
