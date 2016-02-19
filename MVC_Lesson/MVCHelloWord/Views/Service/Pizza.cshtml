@@ -1,7 +1,28 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Pizza";
 }
 
+
+@using MVCHelloWord.Models
+@model IEnumerable<PizzaViewModel>
 <h2>Pizza</h2>
 
+<p>Here is your Pizza </p>
+
+
+<ul>
+@foreach (var item in Model)
+{
+   <li>@item.Name - @item.Price</li>  
+}
+</ul>
+
+
+@ViewBag.Page
+
+
+@foreach(var key in ViewData.Keys)
+{
+   <p>@key - @ViewData[key]</p> 
+
+}
