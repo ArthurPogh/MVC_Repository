@@ -18,7 +18,5 @@ namespace ProductManager
         public string NAME { get; set; }
         public Nullable<int> Qnt { get; set; }
         public Nullable<int> iCategoryID { get; set; }
-    
-        public virtual ProductCategory ProductCategory { get; set; }
     }
 }

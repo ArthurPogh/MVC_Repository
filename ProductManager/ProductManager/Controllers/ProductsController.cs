@@ -12,16 +12,15 @@ namespace ProductManager.Controllers
 {
     public class ProductsController : Controller
     {
-        private ProductManagerDBContext db = new ProductManagerDBContext();
+
+        private ProductsDBModel db = new ProductsDBModel();
 
         // GET: Products
         public ActionResult Index()
         {
 
-         
 
-            var products = db.Products.Include(p => p.ProductCategory);
-            return View(products.ToList());
+            return View();
         }
 
         // GET: Products/Details/5
@@ -55,8 +54,17 @@ namespace ProductManager.Controllers
         {
             if (ModelState.IsValid)
             {
+                product.ID = Guid.NewGuid().ToString();
                 db.Products.Add(product);
-                db.SaveChanges();
+                try
+                {
+                    db.SaveChanges();
+                }
+                catch(Exception  E)
+                {
+
+                    string a = E.Message;
+                }
                 return RedirectToAction("Index");
             }
 
