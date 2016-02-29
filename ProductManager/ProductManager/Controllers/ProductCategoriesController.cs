@@ -13,9 +13,15 @@ namespace ProductManager.Controllers
     
         private ProductsDBModel db = new ProductsDBModel();
 
+
+
+
         // GET: ProductCategories
         public async Task<ActionResult> Index()
         {
+
+
+
             return View(await db.ProductCategories.ToListAsync());
         }
 

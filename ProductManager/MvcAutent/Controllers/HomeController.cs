@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace ProductManager.Controllers
+namespace MvcAutent.Controllers
 {
     public class HomeController : Controller
     {
@@ -20,15 +20,12 @@ namespace ProductManager.Controllers
             return View();
         }
 
+        [Authorize]
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
 
             return View();
         }
-
-
-        
-
     }
 }

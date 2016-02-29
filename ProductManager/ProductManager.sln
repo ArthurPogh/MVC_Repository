@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductManager", "ProductManager\ProductManager.csproj", "{3DA34C18-C568-42D6-A49B-AFAB4CCFE9D4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelTest", "DelTest\DelTest.csproj", "{2D431AAF-78BC-44A7-B516-C9C438EAA201}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcAutent", "MvcAutent\MvcAutent.csproj", "{48A6A042-925E-4DB2-BB5C-672B831B1596}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{3DA34C18-C568-42D6-A49B-AFAB4CCFE9D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3DA34C18-C568-42D6-A49B-AFAB4CCFE9D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3DA34C18-C568-42D6-A49B-AFAB4CCFE9D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D431AAF-78BC-44A7-B516-C9C438EAA201}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D431AAF-78BC-44A7-B516-C9C438EAA201}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D431AAF-78BC-44A7-B516-C9C438EAA201}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D431AAF-78BC-44A7-B516-C9C438EAA201}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48A6A042-925E-4DB2-BB5C-672B831B1596}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48A6A042-925E-4DB2-BB5C-672B831B1596}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48A6A042-925E-4DB2-BB5C-672B831B1596}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48A6A042-925E-4DB2-BB5C-672B831B1596}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
